@@ -1,0 +1,12 @@
+{
+  "name": "finora-bitgo-express",
+  "version": "1.0.0",
+  "description": "Finora BitGo Express server for Render deployment.",
+  "license": "MIT",
+  "scripts": {
+    "start": "bitgo-express --port $PORT --env prod --bind 0.0.0.0 --debug"
+  },
+  "dependencies": {
+    "bitgo-express": "latest"
+  }
+}
