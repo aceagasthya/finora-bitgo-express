@@ -1,10 +1,7 @@
 {
-  "name": "finora-bitgo-express",
-  "version": "1.0.0",
-  "dependencies": {
-    "bitgo-exp": "latest"
-  },
-  "scripts": {
-    "start": "bitgo-exp --port $PORT --env test --accessToken $BITGO_ACCESS_TOKEN"
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "DOCKERFILE",
+    "dockerfilePath": "Dockerfile"
   }
 }
