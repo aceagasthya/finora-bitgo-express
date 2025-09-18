@@ -7,3 +7,9 @@ services:
     envVars:
       - key: BITGO_ENV
         value: test
+      - key: BITGO_ACCESS_TOKEN
+        value: v2xbe1d3123643339eb54f563a3111d0087bfc0408f5afc97e0be0303895addece0
+      - key: WALLET_ID
+        value: 68b9279cccb0c9a25bc1365c96ba0ad9
+      - key: WALLET_PASSPHRASE
+        value: StrongPassphrase@123
