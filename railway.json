@@ -5,7 +5,7 @@
     "dockerfilePath": "Dockerfile"
   },
   "deploy": {
-    "startCommand": "node /var/bitgo-express/bin/bitgo-express --port $PORT --env test --bind 0.0.0.0 --debug",
+    "startCommand": "sh -c \"node /var/bitgo-express/bin/bitgo-express --port $PORT --env test --bind 0.0.0.0 --debug\"",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
