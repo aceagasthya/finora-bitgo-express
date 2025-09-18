@@ -1,7 +1,8 @@
 FROM bitgo/express:latest
-
 ENV BITGO_ENV=test
-# The PORT variable is automatically provided by Railway, so you don't need to set it here.
+ENV PORT=3080
 
-# This command will now correctly use the port assigned by Railway.
-CMD bitgo-express --port $PORT --env $BITGO_ENV --bind 0.0.0.0 --debug
+# This ensures only one version of each dependency is used, fixing the @polkadot error
+RUN npm dedupe
+
+CMD bitgo-express --port 3080 --env test --bind 0.0.0.0 --debug
